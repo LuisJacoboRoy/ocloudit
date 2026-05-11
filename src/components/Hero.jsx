@@ -13,7 +13,7 @@ const Hero = () => {
                 justifyContent: 'center',
                 paddingTop: '100px',
                 paddingBottom: '100px',
-                backgroundImage: 'url(/hero-bg.png)',
+                backgroundImage: 'url(./hero-bg.png)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundAttachment: 'fixed'

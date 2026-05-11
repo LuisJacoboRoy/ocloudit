@@ -6,7 +6,7 @@ const Header = () => {
             <div className="container flex justify-between items-center">
                 <div className="flex items-center gap-2">
                     {/* Logo Horizontal */}
-                    <img src="/ocloudit%20logo.png" alt="ocloudit logo" style={{ height: '40px', width: 'auto', maxWidth: '150px' }} />
+                    <img src="./ocloudit%20logo.png" alt="ocloudit logo" style={{ height: '40px', width: 'auto', maxWidth: '150px' }} />
                 </div>
 
                 <nav className="flex items-center gap-6" style={{ fontWeight: '500' }}>

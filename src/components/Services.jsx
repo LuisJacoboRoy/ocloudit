@@ -5,7 +5,7 @@ const services = [
     {
         id: 'computacion',
         title: 'Soluciones en Computación',
-        image: '/service-hw.png',
+        image: './service-hw.png',
         features: [
             'Mantenimiento Preventivo y Correctivo',
             'Venta y Ensamble de Equipos a Medida',
@@ -18,7 +18,7 @@ const services = [
     {
         id: 'redes',
         title: 'Servicios IT y Redes',
-        image: '/service-net.png',
+        image: './service-net.png',
         features: [
             'Instalación y Configuración de Redes',
             'Soluciones en la Nube (Cloud)',

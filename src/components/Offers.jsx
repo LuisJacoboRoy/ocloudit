@@ -6,7 +6,7 @@ const offers = [
         id: 'presencia',
         title: 'Presencia Digital',
         subtitle: 'Ideal para Emprendedores',
-        image: '/offer-digital.png',
+        image: './offer-digital.png',
         price: 'Cotizar',
         features: [
             'Diseño de Logotipo (2 propuestas)',
@@ -20,7 +20,7 @@ const offers = [
         id: 'seguridad',
         title: 'Pyme Segura',
         subtitle: 'Protección IT Total',
-        image: '/offer-sec.png',
+        image: './offer-sec.png',
         price: 'Cotizar',
         features: [
             'Mantenimiento de 3 equipos',

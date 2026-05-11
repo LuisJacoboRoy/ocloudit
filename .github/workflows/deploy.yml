@@ -34,6 +34,13 @@ jobs:
       - name: Build React project
         run: npm run build
 
+      - name: Configure HTTPS
+        run: |
+          cat > ./dist/_config.yml << EOF
+          url: https://ocloudit.com
+          enforce_https: true
+          EOF
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
