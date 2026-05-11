@@ -30,7 +30,7 @@ const Hero = () => {
             <div className="container" style={{ position: 'relative', zIndex: 2 }}>
                 <ScrollReveal direction="up" className="flex-col items-center text-center gap-6" style={{ maxWidth: '900px', margin: '0 auto' }}>
                     <div style={{ display: 'inline-block', padding: '8px 20px', background: 'rgba(139, 92, 246, 0.15)', border: '1px solid rgba(139, 92, 246, 0.3)', borderRadius: 'var(--border-radius-full)', color: 'var(--color-brand-primary)', fontWeight: '600', fontSize: '0.9rem', marginBottom: '16px' }}>
-                        Innovación Digital en Tuxtepec
+                        Agencia digital tecnologica
                     </div>
                     <h1 style={{ fontSize: '5rem', fontWeight: '800', letterSpacing: '-0.02em', lineHeight: '1.1' }}>
                         Soluciones en <br />

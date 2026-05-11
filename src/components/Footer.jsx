@@ -23,8 +23,8 @@ const Footer = () => {
                 <div className="flex-col">
                     <h4 style={{ marginBottom: '16px', color: '#fff' }}>Contacto</h4>
                     <ul className="flex-col gap-2 text-secondary">
-                        <li>hola@sitio.com</li>
-                        <li>+52 123 456 7890</li>
+                        <li><a href="mailto:killerpollo22@msn.com" style={{ color: 'inherit', textDecoration: 'none' }}>killerpollo22@msn.com</a></li>
+                        <li><a href="https://wa.me/522871311971?text=Hola%20Ocloudit%20me%20puede%20dar%20información?" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>2871311971</a></li>
                         <li>
                             <div className="flex gap-4 mt-8" style={{ marginTop: '16px' }}>
                                 <a href="#" className="glass-panel" style={{ padding: '8px', borderRadius: '50%' }}>X</a>
