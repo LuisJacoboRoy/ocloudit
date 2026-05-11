@@ -29,10 +29,10 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build project with render for SEO
-        run: npm run render
+      - name: Build React project
+        run: npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
