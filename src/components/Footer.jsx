@@ -38,6 +38,11 @@ const Footer = () => {
 
             <div className="container" style={{ marginTop: '48px', paddingTop: '24px', borderTop: '1px solid var(--color-border)', textAlign: 'center', color: 'var(--color-text-secondary)' }}>
                 <p>&copy; {new Date().getFullYear()} ocloudit. Todos los derechos reservados.</p>
+                <div style={{ marginTop: '16px', fontSize: '0.85rem' }}>
+                    <a href="#privacy" className="text-secondary" style={{ textDecoration: 'none', color: 'var(--color-text-secondary)', transition: 'color 0.3s' }} onMouseEnter={(e) => e.target.style.color = '#667eea'} onMouseLeave={(e) => e.target.style.color = 'var(--color-text-secondary)'}>
+                        Política de Privacidad
+                    </a>
+                </div>
             </div>
         </footer>
     );

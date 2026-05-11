@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirigiendo...</title>
+    <script>
+      // Redirigir todas las rutas 404 a index.html para que React Router maneje la navegación
+      const path = window.location.pathname + window.location.search;
+      sessionStorage.redirect = path;
+      window.location.href = '/index.html';
+    </script>
+  </head>
+  <body></body>
+</html>

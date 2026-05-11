@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+Allow: /*.js
+Allow: /*.css
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /*.json$
+
+Sitemap: https://ocloudit.com/sitemap.xml
+
+# Permitir acceso a buscadores principales
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Prevenir scraping excesivo
+User-agent: *
+Crawl-delay: 1
