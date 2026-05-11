@@ -5,13 +5,8 @@ const Header = () => {
         <header className="glass-panel" style={{ position: 'sticky', top: 0, zIndex: 50, padding: '16px 0' }}>
             <div className="container flex justify-between items-center">
                 <div className="flex items-center gap-2">
-                    {/* Logo Placeholder */}
-                    <div style={{ width: '40px', height: '40px', background: 'var(--color-brand-primary)', borderRadius: 'var(--border-radius-sm)', display: 'grid', placeItems: 'center', fontWeight: 'bold' }}>
-                        O
-                    </div>
-                    <a href="#" style={{ fontSize: '1.25rem', fontWeight: '700', fontFamily: 'Outfit, sans-serif' }} className="text-gradient">
-                        ocloudit
-                    </a>
+                    {/* Logo Horizontal */}
+                    <img src="/ocloudit%20logo.png" alt="ocloudit logo" style={{ height: '40px', width: 'auto', maxWidth: '150px' }} />
                 </div>
 
                 <nav className="flex items-center gap-6" style={{ fontWeight: '500' }}>

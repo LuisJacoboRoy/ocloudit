@@ -5,7 +5,7 @@ const Footer = () => {
         <footer style={{ backgroundColor: 'var(--color-bg-base)', borderTop: '1px solid var(--color-border)', padding: '48px 0', marginTop: 'auto' }}>
             <div className="container grid grid-cols-3 gap-8">
                 <div className="flex-col gap-4">
-                    <h3 className="text-gradient" style={{ fontSize: '1.5rem', marginBottom: '16px' }}>ocloudit</h3>
+                    <img src="/ocloudit%20logo%20cuadrado.png" alt="ocloudit logo" style={{ height: '60px', width: '60px', marginBottom: '16px' }} />
                     <p className="text-secondary" style={{ maxWidth: '300px' }}>
                         Soluciones integrales de TI, soporte técnico y desarrollo web de vanguardia a la medida de tu empresa.
                     </p>
