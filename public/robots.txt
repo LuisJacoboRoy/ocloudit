@@ -1,3 +1,5 @@
+# Robots.txt para ocloudit
+# Directivas generales para todos los buscadores
 User-agent: *
 Allow: /
 Allow: /*.js
@@ -8,22 +10,50 @@ Allow: /*.jpeg
 Allow: /*.gif
 Allow: /*.svg
 Allow: /*.webp
+
+# Denegar acceso a directorios sensibles
 Disallow: /node_modules/
 Disallow: /src/
+Disallow: /dist/
 Disallow: /*.json$
+Disallow: /*.map$
 
-Sitemap: https://ocloudit.com/sitemap.xml
+# Política de crawl rate para buscadores generales
+Crawl-delay: 1
+Request-rate: 30/1m
 
-# Permitir acceso a buscadores principales
+# Permitir buscadores principales
 User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
 Allow: /
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 0.5
 
-User-agent: Slurp
+User-agent: Slurpbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: YandexBot
 Allow: /
 
-# Prevenir scraping excesivo
-User-agent: *
-Crawl-delay: 1
+User-agent: Applebot
+Allow: /
+
+# Denegar bots malintencionados
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemap
+Sitemap: https://ocloudit.com/sitemap.xml
+Sitemap: https://ocloudit.com/robots.txt
