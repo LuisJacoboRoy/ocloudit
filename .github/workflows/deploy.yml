@@ -28,11 +28,22 @@ jobs:
           node-version: '20'
           cache: npm
 
-      - name: Install dependencies
+      - name: Install root dependencies
         run: npm ci
 
-      - name: Build React project
+      - name: Build root React project
         run: npm run build
+
+      - name: Install capis dependencies
+        run: cd capis && npm ci
+
+      - name: Build capis project
+        run: cd capis && npm run build
+
+      - name: Copy capis build to dist
+        run: |
+          mkdir -p dist/capis
+          cp -r capis/dist/* dist/capis/
 
       - name: Configure HTTPS
         run: |

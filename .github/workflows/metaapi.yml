@@ -1,0 +1,34 @@
+name: Deploy to Meta API
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy-meta:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to Meta API
+        env:
+          META_APP_ID: ${{ secrets.938821972497346 }}
+          META_APP_TOKEN: ${{ secrets.6ba1081a87f5cbfeeb23d2e41c106872 }}
+        run: |
+          # Script para publicar en Meta API
+          node scripts/meta-deploy.js
